@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#particles-js {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ede0e0;
+    z-index: -1;
+    overflow: hidden;
+    
+  }
+  
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    width: 150vh;
+    
+    
+}
+/*Common For Container and Theory*/
+.container , .theory{
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin: 10vh auto;
+    border: 1px solid #fff;
+    background-color:rgba(255,255,255,0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+}
+.bar {
+    display: inline-block;
+    align-items: flex-end;
+    width: 25px;
+    margin: auto 5px;
+    background-color: black;
+}
+
+.box {
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid black;
+    height: 30vh;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+    width: inherit;
+}
+
+.theory {
+    margin: 10vh;
+    padding: 10vh;
+    font-size: 1.3em;
+    /* border: 1px solid #fff;
+    background-color:rgba(255,255,255,0.7);
+    border-radius: 10px; */
+}
+
+#array-input {
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #333;
+    font-size: 1em;
+    border-radius: 30px;
+    background-color: azure;
+    font-family: sans-serif;
+    padding: 0 10px;
+}
+
+.btn button {
+    padding: 10px 20px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #333;
+    font-size: 1em;
+    overflow: hidden;
+    background-color: azure;
+    border-radius: 30px;
+    font-family: sans-serif;
+}
